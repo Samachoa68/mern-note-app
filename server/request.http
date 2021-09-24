@@ -1,0 +1,45 @@
+POST  http://localhost:5000/api/auth/register
+Content-Type:  application/json
+
+{
+    "username": "Samachoa",
+    "password": "kkk"
+}
+
+###
+POST  http://localhost:5000/api/auth/login
+Content-Type:  application/json
+
+{
+    "username": "Samachoa",
+    "password": "kkk"
+}
+
+###
+POST  http://localhost:5000/api/posts
+Content-Type:  application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTQ4NTdiNGU3YmRjZWU5NWVlNjMwYWQiLCJpYXQiOjE2MzIzOTc0OTh9.-Psyhi-gWUSzwBvuiTxqHXgeDMFwdschwVrYaUBmGR0
+
+{    "title": "Backend1",
+    "description": "Learn1",
+    "url": "youtube.com",
+    "status": "LEARNING"
+}
+###
+GET   http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTQ4NTdiNGU3YmRjZWU5NWVlNjMwYWQiLCJpYXQiOjE2MzI0NzIyOTN9.X71a8GoKNbuF8BG-K0ZmszZh5JZmWZKzwqO5hoq8KCY
+
+###
+PUT  http://localhost:5000/api/posts/6148585ce7bdcee95ee630af
+Content-Type:  application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTQ4NTdiNGU3YmRjZWU5NWVlNjMwYWQiLCJpYXQiOjE2MzIxMzIxODR9.ENCfn6VJiGxbO4izLSDD3qw_IsTSBP5fT24WuB21ZeU
+
+{    "title": "Backend update 1",
+    "description": "Learn up",
+    "url": "https://youtube.com",
+    "status": "LEARNING"
+}
+
+###
+DELETE  http://localhost:5000/api/posts/6148585ce7bdcee95ee630af
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTQ4NTdiNGU3YmRjZWU5NWVlNjMwYWQiLCJpYXQiOjE2MzIxMzIxODR9.ENCfn6VJiGxbO4izLSDD3qw_IsTSBP5fT24WuB21ZeU
